@@ -1,0 +1,729 @@
+/******All-HTML Style*****/
+* {
+    scroll-behavior: smooth;
+   margin:0;
+}
+
+
+
+/********Scrollbar style*********/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #242526;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.58);
+  border-radius: 50px;
+}
+
+
+
+/********Header styles***********/
+header {
+  width: 100%;
+  background-color: #1451AC;
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+    margin: 30px 50px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 47px;
+    height: 53.px;
+    z-index: 2;
+}
+
+#name {
+  margin:0 30px;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 30px 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links li {
+  padding: 15px 16px;
+  transition: transform .3s;
+}
+
+.links li:hover {
+  transform: translateX(10px);
+  cursor: pointer;
+}
+
+.links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 50px;
+  flex-wrap: wrap;
+}
+
+.titles {
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 54px;
+  z-index: 3;
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.sub {
+  font-size: 46px;
+  font-weight: normal;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  height: 600px;
+  align-items: end;
+}
+
+.titles  h2 {
+  margin: 2px 0;
+}
+
+
+
+/*To give the typing animation*/
+h2.typing{
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+  typing 1s steps(20, end) forwards,
+  blink .8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: white; }
+}
+
+
+
+/********* About Section Styles **********/
+about {
+  padding-top: 100px;
+  width: 100%;
+  background-color: #242526;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: white; 
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: normal;
+}
+
+about h2 {
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 50px;
+  padding: 0 0 0 7%;
+  font-weight: normal;
+}
+
+about p {
+  font-size: 24px;
+  padding: 0 7% 0;
+  text-align: justify;
+}
+
+about a {
+  background-color: #1451AC; 
+  font-size: 18px;
+  justify-content: center;
+  margin: 50px 7% 50px 78%;
+  border-radius: 30pt;
+  align-items: center;
+  height: 40px;
+  display: flex;
+  transition: transform .3s;
+  color: inherit;
+    text-decoration: none;
+}
+
+about a:hover{
+  transform: translatey(-10px);
+  background-color: #1451AC;
+  cursor: pointer;
+}
+
+
+
+/**********Interview Section Styles************/
+interview {
+  background-color: #242526;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+}
+
+interview h2 {
+  color: white; 
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: normal;
+  margin: 0px 0 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+interview line {
+  background-color:#1451AC;
+  height: 4px;
+  width: 35%;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+interview iframe {
+  border-radius: 20px;
+  text-align: center;
+  height: 500px;
+  width: 75%;
+  margin: auto;
+}
+
+
+
+/*****Technical Stack Section Styles*****/
+technical {
+  background-color: #242526;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0; 
+  color: white;  
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+  padding: 80px 7% 200px;
+}
+
+technical line {
+  background-color:#1451AC;
+  height: 4px;
+  width: 47%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+technical h2{
+  font-weight: normal;
+  margin: 0px 0 10px;
+  font-size: 50px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.graphic img {
+  height: 350px;
+}
+
+.container-tech {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills {
+  width: auto;
+}
+
+.skills img {
+  height: 120px;
+  padding: 20px;
+}
+
+
+
+/********Experience Styles*********/
+ experience{
+  background-color: #242526;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0; 
+  color: white;  
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 80px 7% 200px;
+}
+
+experience line {
+  background-color:#1451AC;
+  height: 4px;
+  width: 75%;
+  display: flex;
+}
+
+.container-all-experience {
+  display: flex;
+}
+
+experience vline {
+  background-color:#1451AC;
+  width: 4px;
+  display: flex;
+  margin-right: 50px;
+}
+
+experience h2{
+  font-size: 50px;
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+.container-logo {
+  text-align: right;
+}
+
+.container-info{
+  display: flex;
+}
+
+.date {
+  padding: 0 20% 0 0;
+  width: 30%;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employeer {
+  color:#1451AC;
+  text-align: right;
+}
+
+experience img {
+  height: 80px;
+  padding: 50px 0 30px;
+}
+
+experience ul {
+  list-style-type: none;
+  padding:0;
+}
+
+experience li {
+  padding: 8px 0;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.experience-one {
+  padding-top: 30px;
+}
+
+.experience-two {
+  padding-top: 100px;
+}
+
+
+
+/*********Footer styles********/
+footer{
+  color: white;
+  font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: normal;
+  background-color: #242526;
+  display: flex;
+    flex-direction: column;
+}
+footer h2 {
+  margin: 0px 0 10px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+}
+
+footer .topLine {
+  background-color:#1451AC;
+  height: 4px;
+  width: 22%;
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+footer .container {
+  padding: 60px 0 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#text {
+  text-align: right;
+}
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+footer li {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 10px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: #1451AC;
+}
+
+footer img {
+  height: 35px;
+  padding-right: 9px;
+}
+
+.copyright, #text {
+    width: 25%;
+}
+
+.copyright {
+  margin:0;
+  text-align: center;
+}
+
+footer .nameEdit{
+  color: #1451AC;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+footer line {
+  background-color:#1451AC;
+  height: 40px;
+  width: 100%;
+  display: flex;
+}
+
+
+/*Styles for screens smaller than 492px**/
+@media (max-width: 492px) {
+  
+  header {
+    height: auto;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .links ul {
+    margin: 0;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .links ul li {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .titles {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .sub {
+    font-size: 22px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+  }
+
+  about h2 {
+    font-size: 30px;
+  }
+  
+  interview {
+    padding-bottom: 150px;
+  }
+  
+  interview h2{
+    font-size: 30px;
+  }
+  
+  interview iframe{
+    height: 300px;
+  }
+
+  technical {
+    padding-bottom: 50px;
+  }
+
+  technical h2 {
+    font-size: 30px;
+  }
+
+  .graphic img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container-tech {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills h3 {
+    font-size: 25px;
+    padding: 20px 0 0 10px;
+  }
+
+  .front-end{
+    padding-top: 20px;
+  }
+
+  experience h2 {
+    font-size: 30px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 40px;
+  }
+
+  footer h2 {
+    font-size: 30px;
+  }
+
+  footer .copyright, #text, footer ul {
+    width: 22%;
+    padding: 20;
+    width: 300px;
+  }
+  footer li {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+  }
+
+  footer img {
+    margin: 30px 3px 9px;
+  }
+
+  footer .copyright {
+    padding: 60px 0;
+  }
+
+  footer #text {
+    text-align: center;
+  }
+
+  footer #text h3 {
+    margin: 0;
+  }
+}
+
+/*Styles for screens smaller thatn 767px**/
+@media (max-width: 767px) and (min-width: 493px){
+  
+  header {
+    height: auto;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .links ul {
+    margin: 0;
+    text-align: center;
+  }
+
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .titles {
+    font-size: 33px;
+    padding-top: 20px;
+  }
+
+  .sub {
+    font-size: 27px;
+  }
+
+  .image-container img {
+    height: 300px;
+    padding-top: 60px;
+  }
+
+  about h2 {
+    font-size: 30px;
+  }
+  
+  interview {
+    padding-bottom: 150px;
+  }
+  
+  interview h2{
+    font-size: 30px;
+  }
+  
+  interview iframe{
+    height: 300px;
+  }
+
+  technical {
+    padding-bottom: 50px;
+  }
+
+  technical h2 {
+    font-size: 30px;
+  }
+
+  .graphic img {
+    height: 200px;
+  }
+  
+  .container-tech {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills h3 {
+    font-size: 25px;
+    padding: 20px 0 0 10px;
+  }
+
+  .front-end{
+    padding-top: 20px;
+  }
+
+  experience h2 {
+    font-size: 30px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 40px;
+  }
+
+  footer h2 {
+    font-size: 30px;
+  }
+
+  footer .copyright, #text, footer ul {
+    width: 22%;
+    padding: 20;
+    width: 300px;
+  }
+  footer li {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+  }
+
+  footer img {
+    margin: 30px 3px 9px;
+  }
+
+  footer .copyright {
+    padding: 60px 0;
+  }
+
+  footer #text {
+    text-align: center;
+  }
+
+  footer #text h3 {
+    margin: 0;
+  }
+}
+
+/*Styles for screens smaller than 823px*/
+@media (max-width: 823px) {
+  about a {
+    margin: 50px 5% 50px 55%;
+    font-size: 16px;
+  }
+  about p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1416px) and (min-width:768px ){
+
+  .graphic img {
+    width: 100%;
+  }
+  
+  .container-tech {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills {
+    padding-top: 50px;
+  }
+
+  .skills img {
+    height: 200px;
+  }
+
+  .skills h3 {
+    font-size: 30px;
+    padding: 20px 0 0 10px;
+  }
+}
+
+
