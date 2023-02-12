@@ -28,10 +28,10 @@ header {
 }
 
 .links {
-    margin: 30px 50px;
+    margin: 30px 40px;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -681,6 +681,7 @@ footer line {
   .links ul {
     margin: 0;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .header2 {
