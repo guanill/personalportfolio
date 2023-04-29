@@ -43,7 +43,7 @@ header {
 }
 
 #name {
-  margin:0 30px;
+  margin:10px 30px;
 }
 
 .links ul {
@@ -145,7 +145,7 @@ about h2 {
   margin-top: 60px;
   display: inline-block;
   font-size: 50px;
-  padding: 0 0 0 7%;
+  padding: 0 0 40px 7%;
   font-weight: normal;
 }
 
@@ -397,15 +397,16 @@ experience h2{
 
 .container-logo {
   text-align: right;
+  width: 30%;
 }
 
 .container-info{
   display: flex;
+  gap: 30px;
 }
 
 .date {
-  padding: 0 20% 0 0;
-  width: 30%;
+  text-align: left;
 }
 
 .job-header {
@@ -418,9 +419,13 @@ experience h2{
   text-align: right;
 }
 
+experience .info {
+  width: 70%;
+}
+
 experience img {
-  height: 80px;
-  padding: 50px 0 30px;
+  padding: 20px 0 0;
+  width: 100%;
 }
 
 experience ul {
@@ -538,7 +543,14 @@ footer line {
 
 /*Styles for screens smaller than 492px**/
 @media (max-width: 492px) {
-  
+
+  about {
+    padding-top: 0;
+  }
+  .titles {
+    font-size: 20px;
+    padding-top: 0;
+}
   header {
     height: auto;
   }
@@ -565,19 +577,14 @@ footer line {
     align-items: center;
   }
     
-  .titles {
-    font-size: 25px;
-    padding-top: 20px;
-  }
 
   .sub {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   .image-container img {
     width: 100%;
     height: auto;
-    padding-top: 60px;
   }
 
   about h2 {
@@ -664,14 +671,43 @@ footer line {
   footer #text h3 {
     margin: 0;
   }
+
+  .date {
+    text-align: center;
+    font-size: 20px;
+  }
+  header {
+    height: auto;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+}
+.container-info {
+  flex-direction: column;
+  align-items: center;
+}
+.container-logo {
+  text-align: center;
+  width: 70%;
+}
 }
 
 /*Styles for screens smaller thatn 767px**/
 @media (max-width: 767px) and (min-width: 493px){
-  
+  .date {
+    text-align: center;
+    font-size: 20px;
+  }
   header {
     height: auto;
   }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+}
 
   .links {
     flex-direction: column;
@@ -696,11 +732,6 @@ footer line {
 
   .sub {
     font-size: 27px;
-  }
-
-  .image-container img {
-    height: 300px;
-    padding-top: 60px;
   }
 
   about h2 {
@@ -794,6 +825,16 @@ footer line {
   footer #text h3 {
     margin: 0;
   }
+
+  .container-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-logo {
+  width: 70%;
+}
+
 }
 
 /*Styles for screens smaller than 823px*/
