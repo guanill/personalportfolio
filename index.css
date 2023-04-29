@@ -8,7 +8,7 @@
 
 /********Scrollbar style*********/
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
   background-color: #242526;
 }
 
