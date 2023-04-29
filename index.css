@@ -8,7 +8,7 @@
 
 /********Scrollbar style*********/
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 10px;
   background-color: #242526;
 }
 
@@ -26,6 +26,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 
 .links {
     margin: 30px 40px;
@@ -228,20 +229,16 @@ projects {
   padding: 40px;
 }
 
-projects line {
-  background-color:#1451acad;
-  height: 4px;
-  width: 47%;
-  display: flex;
-  margin-bottom: 40px;
-}
-
 projects h2 {
   font-weight: normal;
   margin: 0px 0 10px;
   font-size: 50px;
   text-align: left;
-  padding-bottom: 40px;
+  padding: 30px 0 40px 30px;
+  width: 45%;
+  border-top: 4px solid #1451AC;
+  border-left: 4px solid #1451AC;
+
 }
 
 projects .project-container {
@@ -280,7 +277,7 @@ projects .container-footer, .container-footer div{
 projects .info-container img {
   width: 70%;
   height: fit-content;
-  border-radius: 0 20px 20px 0;
+  border-radius: 20px;
 }
 
 .container-footer a {
@@ -297,7 +294,6 @@ projects .info-container img {
 
 .info-container p {
   padding: 2%;
-  background-color: #1451AC;
   border-radius: 20px 0 0 20px;
   height: auto;
   
@@ -380,6 +376,10 @@ experience line {
 
 .container-all-experience {
   display: flex;
+  border-radius: 20px 0;
+    border-top: 5px solid #1451AC;
+    border-left: 5px solid #1451AC;
+    padding-left: 60px;
 }
 
 experience vline {
@@ -540,6 +540,12 @@ footer line {
   display: flex;
 }
 
+technical h2 {
+  border-top: 4px solid #1451AC;
+  padding-top: 30px;
+  width: 55%;
+}
+
 
 /*Styles for screens smaller than 492px**/
 @media (max-width: 492px) {
@@ -688,14 +694,30 @@ footer line {
   flex-direction: column;
   align-items: center;
 }
+experience .info {
+    width: 100%;
+}
 .container-logo {
   text-align: center;
-  width: 70%;
+  width: 100%;
+}
+experience {
+  padding: 80px 7% 50px;
+}
+
+.project1 {
+  padding: 50px 0 0;
 }
 }
 
 /*Styles for screens smaller thatn 767px**/
 @media (max-width: 767px) and (min-width: 493px){
+  technical h2 {
+    
+    border-top: 4px solid #1451AC;
+    padding-top: 30px;
+    width: 60%;
+} 
   .date {
     text-align: center;
     font-size: 20px;
@@ -835,10 +857,21 @@ footer line {
   width: 70%;
 }
 
+.container-all-experience {
+  padding-left: 30px;
+}
+
+
 }
 
 /*Styles for screens smaller than 823px*/
 @media (max-width: 823px) {
+  technical h2 {
+    font-size: 30px;
+    border-top: 4px solid #1451AC;
+    padding-top: 30px;
+    width: 60%;
+}
   about a {
     margin: 50px 5% 50px 55%;
     font-size: 16px;
@@ -859,12 +892,10 @@ footer line {
 
   projects .info-container img {
     width: 100%;
-    border-radius: 20px 20px 0px 0;
   } 
 
   .info-container p {
     padding: 4%;
-    border-radius: 0 0 20px 20px;
     width: fit-content;
   }
 
@@ -879,7 +910,11 @@ footer line {
 }
 
 @media (max-width: 1416px) and (min-width:768px ){
-
+  technical h2 {
+    border-top: 4px solid #1451AC;
+    padding-top: 30px;
+    width: 55%;
+}
   .graphic img {
     width: 100%;
   }
