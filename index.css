@@ -544,8 +544,19 @@ technical h2 {
   border-top: 4px solid #1451AC;
   padding-top: 30px;
   width: 55%;
+} 
+
+.revealable {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s ease;
 }
 
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 /*Styles for screens smaller than 492px**/
 @media (max-width: 492px) {

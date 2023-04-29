@@ -33,20 +33,22 @@
     <!--The content of the webpage, containing the about, interview, projects, technical and experience sections-->
     <body>
         <about id="about">
-            <h2>About Me</h2>
-            <p>I am a sophomore student at Polytechnic University of Puerto Rico studying 
-                Computer Science. I have gained experience in HTML, CSS, and C++; always looking to learn more and improve 
-                my skills. Currently, I am seeking an internship to gain more practical experience in the field.
-                I enjoy playing videogames and staying up to date on the latest technologies and trends in software development. 
-                I have interest in projects that involve developing software applications that solve a real-world problem. I'm 
-                excited to continue my education and launch my career as a software engineer.</p>  
-            <a href="Resume.pdf" download target="_blank"><h3>See Resume</h3></a>
+            <div class="revealable">
+                <h2>About Me</h2>
+                <p>I am a sophomore student at Polytechnic University of Puerto Rico studying 
+                    Computer Science. I have gained experience in HTML, CSS, and C++; always looking to learn more and improve 
+                    my skills. Currently, I am seeking an internship to gain more practical experience in the field.
+                    I enjoy playing videogames and staying up to date on the latest technologies and trends in software development. 
+                    I have interest in projects that involve developing software applications that solve a real-world problem. I'm 
+                    excited to continue my education and launch my career as a software engineer.</p>  
+                <a href="Resume.pdf" download target="_blank"><h3>See Resume</h3></a>
+                </div>
         </about>
         <experience id="experience">
             <div class="container-all-experience">
                 <div>
                     <h2>My Experience</h2>
-                    <div class="experience-one">
+                    <div class="experience-one revealable">
                         <div class="container-info">
                             <div class="container-logo">
                                 <h4 class="date">JUN 2023 - AUG 2023</h4>
@@ -64,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience-two">
+                    <div class="experience-two revealable">
                         <div class="container-info">
                             <div class="container-logo">
                                 <h4 class="date">JUN 2019 - JUL 2019</h4>
@@ -88,7 +90,7 @@
         </experience>
         <projects id="projects">
             <h2>Projects</h2>
-            <div class="project1">
+            <div class="project1 revealable">
                 <h3>ColorStack at PUPR Website</h3>
                 <div class="project-container">
                     <div>
@@ -112,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project1">
+            <div class="project1 revealable">
                 <h3>Social Justice Info Page</h3>
                 <div class="project-container">
                     <div>
@@ -136,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project1">
+            <div class="project1 revealable">
                 <h3>School Webpage</h3>
                 <div class="project-container">
                     <div>
@@ -162,7 +164,7 @@
         </projects>
         <technical>
             <h2>My Technical Stack</h2>
-            <div class="container-tech">
+            <div class="container-tech revealable">
                 <div class="graphic">
                     <img src="images/techtable.png" alt="A bar table of my technical skills">
                 </div>
@@ -185,6 +187,7 @@
                 </div>
             </div>
         </technical>
+        <script src="index.js"></script>
     </body>
 
     <!--The footer of the webpage, containing contact info-->
