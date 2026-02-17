@@ -92,12 +92,24 @@ export default function Hero() {
                   <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
                 </svg>
               </a>
+              <a
+                href={`${import.meta.env.BASE_URL}Resume%20Angel%20Guanill.pdf`}
+                download
+                className="btn btn--ghost"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Resume
+              </a>
               <a href="#contact" className="btn btn--ghost">
                 Get In Touch
               </a>
             </div>
           </div>
-          <div className="hero__right">
+          <div className="hero__terminal-wrap">
             <Terminal />
           </div>
         </div>

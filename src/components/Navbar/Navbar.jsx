@@ -48,7 +48,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="/Resume%20Angel%20Guanill.pdf"
+              href={`${import.meta.env.BASE_URL}Resume%20Angel%20Guanill.pdf`}
               download
               className="navbar__resume-btn"
               onClick={closeMobile}

@@ -62,7 +62,7 @@ export const projects = [
     description:
       'A feature-rich, client-side web app for tracking and visualizing travel history on an interactive world map. Includes a D3.js-powered SVG map with zoom/pan, a flight log with animated arc routes and Haversine distance calculation, a landmark explorer with hundreds of curated worldwide landmarks, photo mapping with built-from-scratch EXIF GPS extraction, a shareable digital passport with travel stats and continent badges, and an advanced flight analytics dashboard.',
     tech: ['JavaScript', 'TopoJSON'],
-    image: '/travel-tracker.png',
+    image: import.meta.env.BASE_URL + 'travel-tracker.png',
     github: null,
     live: null,
   },
@@ -72,7 +72,7 @@ export const projects = [
     description:
       'A fitness tracking web app that lets you log workouts by muscle group, set weekly training goals, and visualize your consistency with detailed stats. Features include a muscle-group selector with body map, customizable weekly frequency targets, streak tracking, and interactive charts showing workout distribution, weekly progress, and historical trends.',
     tech: ['React', 'CSS', 'JavaScript'],
-    image: '/gym-tracker.png',
+    image: import.meta.env.BASE_URL + 'gym-tracker.png',
     github: null,
     live: null,
   },
@@ -82,7 +82,7 @@ export const projects = [
     description:
       'An end-to-end Retrieval-Augmented Generation system that lets users search and query large document collections through natural language. Features a full ingestion pipeline—chunking, embedding, and vector-based retrieval—that surfaces the most relevant context for LLM-generated answers. Includes a polished web interface for document upload and interactive querying, optimized for retrieval accuracy, low latency, and a clear, intuitive UX.',
     tech: ['Python', 'React', 'LangChain', 'Vector DB'],
-    image: '/IntelliDocs.png',
+    image: import.meta.env.BASE_URL + 'IntelliDocs.png',
     github: null,
     live: 'https://intellidocs-ivory.vercel.app/',
   },
