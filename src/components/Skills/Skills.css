@@ -1,0 +1,113 @@
+.skills {
+  padding: 120px 0;
+  background: var(--bg-primary);
+}
+
+.skills__categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.skills__category {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills__category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  opacity: 0.6;
+}
+
+.skills__category-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.skills__category-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.skills__category-dot--front {
+  background: var(--accent);
+}
+
+.skills__category-dot--back {
+  background: #7c5bf5;
+}
+
+.skills__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 14px 20px;
+  transition: border-color 0.3s ease,
+              background 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.skill-pill:hover {
+  border-color: var(--border-accent);
+  background: var(--accent-glow);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(79, 125, 249, 0.15);
+}
+
+.skill-pill__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.skill-pill__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 80px 0;
+  }
+
+  .skills__categories {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .skills__category {
+    padding: 24px;
+  }
+}

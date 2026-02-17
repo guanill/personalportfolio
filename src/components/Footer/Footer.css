@@ -1,0 +1,135 @@
+.footer {
+  padding: 120px 0 40px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer__top {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer__heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #fff 30%, var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer__subheading {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Link cards */
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.footer__link-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px 28px;
+  min-width: 260px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.4s ease,
+              transform 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+.footer__link-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.footer__link-card:hover::before {
+  transform: scaleX(1);
+}
+
+.footer__link-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(79, 125, 249, 0.1), 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.footer__link-card svg {
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
+.footer__link-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer__link-handle {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Bottom */
+.footer__bottom {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer__copyright {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer__accent {
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+.footer__year {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 0 32px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__link-card {
+    width: 100%;
+    max-width: 340px;
+  }
+}
