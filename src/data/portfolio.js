@@ -86,6 +86,26 @@ export const projects = [
     github: null,
     live: 'https://intellidocs-ivory.vercel.app/',
   },
+  {
+    id: 4,
+    title: 'BeanCount',
+    description:
+      'A full-stack personal finance dashboard that aggregates bank accounts, investments, crypto, credit cards, and debts into a unified net worth view. Integrates with Teller and Plaid APIs for real-time transaction syncing across 12,000+ financial institutions, with automatic spending categorization via regex-based merchant matching (100+ patterns). Features loan amortization schedules, RSU vesting planners, scenario-based net worth projections, and interactive donut charts — all built without external charting libraries.',
+    tech: ['Next.js', 'TypeScript', 'SQLite', 'Tailwind CSS', 'NextAuth'],
+    image: import.meta.env.BASE_URL + 'beancount.jpg',
+    github: null,
+    live: null,
+  },
+  {
+    id: 5,
+    title: 'Poketeer',
+    description:
+      'A comprehensive Pokemon TCG collection manager with AI-powered card scanning using hybrid OCR + visual similarity matching (ResNet50 + ONNX). Features on-device ML inference via ONNX Runtime, real-time price tracking from TCGPlayer, multi-language support (EN/JA/TH) across 28,000+ cards, pgvector HNSW index for sub-millisecond similarity search, portfolio analytics with profit/loss tracking, and 3D card animations.',
+    tech: ['React', 'FastAPI', 'Supabase', 'ONNX', 'Capacitor'],
+    image: import.meta.env.BASE_URL + 'poketeer.jpg',
+    github: null,
+    live: null,
+  },
 ];
 
 export const techStack = {
