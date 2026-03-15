@@ -74,7 +74,7 @@ export const projects = [
     tech: ['React', 'FastAPI', 'Supabase', 'ONNX', 'Capacitor'],
     image: import.meta.env.BASE_URL + 'poketeer.jpg',
     github: null,
-    live: null,
+    live: 'https://guanill.github.io/Poketeer/',
   },
   {
     id: 3,
