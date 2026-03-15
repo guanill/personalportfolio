@@ -58,21 +58,21 @@ export const experiences = [
 export const projects = [
   {
     id: 1,
-    title: 'Interactive Travel Tracker',
+    title: 'BeanCount',
     description:
-      'A feature-rich, client-side web app for tracking and visualizing travel history on an interactive world map. Includes a D3.js-powered SVG map with zoom/pan, a flight log with animated arc routes and Haversine distance calculation, a landmark explorer with hundreds of curated worldwide landmarks, photo mapping with built-from-scratch EXIF GPS extraction, a shareable digital passport with travel stats and continent badges, and an advanced flight analytics dashboard.',
-    tech: ['JavaScript', 'TopoJSON'],
-    image: import.meta.env.BASE_URL + 'travel-tracker.png',
+      'A full-stack personal finance dashboard that aggregates bank accounts, investments, crypto, credit cards, and debts into a unified net worth view. Integrates with Teller and Plaid APIs for real-time transaction syncing across 12,000+ financial institutions, with automatic spending categorization via regex-based merchant matching (100+ patterns). Features loan amortization schedules, RSU vesting planners, scenario-based net worth projections, and interactive donut charts — all built without external charting libraries.',
+    tech: ['Next.js', 'TypeScript', 'SQLite', 'Tailwind CSS', 'NextAuth'],
+    image: import.meta.env.BASE_URL + 'beancount.jpg',
     github: null,
     live: null,
   },
   {
     id: 2,
-    title: 'Gym Tracker',
+    title: 'Poketeer',
     description:
-      'A fitness tracking web app that lets you log workouts by muscle group, set weekly training goals, and visualize your consistency with detailed stats. Features include a muscle-group selector with body map, customizable weekly frequency targets, streak tracking, and interactive charts showing workout distribution, weekly progress, and historical trends.',
-    tech: ['React', 'CSS', 'JavaScript'],
-    image: import.meta.env.BASE_URL + 'gym-tracker.png',
+      'A comprehensive Pokemon TCG collection manager with AI-powered card scanning using hybrid OCR + visual similarity matching (ResNet50 + ONNX). Features on-device ML inference via ONNX Runtime, real-time price tracking from TCGPlayer, multi-language support (EN/JA/TH) across 28,000+ cards, pgvector HNSW index for sub-millisecond similarity search, portfolio analytics with profit/loss tracking, and 3D card animations.',
+    tech: ['React', 'FastAPI', 'Supabase', 'ONNX', 'Capacitor'],
+    image: import.meta.env.BASE_URL + 'poketeer.jpg',
     github: null,
     live: null,
   },
@@ -88,21 +88,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'BeanCount',
+    title: 'Interactive Travel Tracker',
     description:
-      'A full-stack personal finance dashboard that aggregates bank accounts, investments, crypto, credit cards, and debts into a unified net worth view. Integrates with Teller and Plaid APIs for real-time transaction syncing across 12,000+ financial institutions, with automatic spending categorization via regex-based merchant matching (100+ patterns). Features loan amortization schedules, RSU vesting planners, scenario-based net worth projections, and interactive donut charts — all built without external charting libraries.',
-    tech: ['Next.js', 'TypeScript', 'SQLite', 'Tailwind CSS', 'NextAuth'],
-    image: import.meta.env.BASE_URL + 'beancount.jpg',
-    github: null,
-    live: null,
-  },
-  {
-    id: 5,
-    title: 'Poketeer',
-    description:
-      'A comprehensive Pokemon TCG collection manager with AI-powered card scanning using hybrid OCR + visual similarity matching (ResNet50 + ONNX). Features on-device ML inference via ONNX Runtime, real-time price tracking from TCGPlayer, multi-language support (EN/JA/TH) across 28,000+ cards, pgvector HNSW index for sub-millisecond similarity search, portfolio analytics with profit/loss tracking, and 3D card animations.',
-    tech: ['React', 'FastAPI', 'Supabase', 'ONNX', 'Capacitor'],
-    image: import.meta.env.BASE_URL + 'poketeer.jpg',
+      'A feature-rich, client-side web app for tracking and visualizing travel history on an interactive world map. Includes a D3.js-powered SVG map with zoom/pan, a flight log with animated arc routes and Haversine distance calculation, a landmark explorer with hundreds of curated worldwide landmarks, photo mapping with built-from-scratch EXIF GPS extraction, a shareable digital passport with travel stats and continent badges, and an advanced flight analytics dashboard.',
+    tech: ['JavaScript', 'TopoJSON'],
+    image: import.meta.env.BASE_URL + 'travel-tracker.png',
     github: null,
     live: null,
   },
