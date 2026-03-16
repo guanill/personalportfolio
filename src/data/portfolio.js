@@ -64,7 +64,7 @@ export const projects = [
     tech: ['Next.js', 'TypeScript', 'SQLite', 'Tailwind CSS', 'NextAuth'],
     image: import.meta.env.BASE_URL + 'beancount.jpg',
     github: null,
-    live: null,
+    live: 'https://guanill.github.io/personalportfolio/',
   },
   {
     id: 2,
