@@ -20,6 +20,7 @@ function ExternalLinkIcon() {
   );
 }
 
+// eslint-disable-next-line react/prop-types
 function TiltCard({ children, className, isFeatured }) {
   const cardRef = useRef(null);
 
@@ -78,6 +79,20 @@ export default function Projects() {
             >
               {project.image && (
                 <div className="project-card__image-wrap">
+                  <div className="project-card__chrome" aria-hidden="true">
+                    <span className="project-card__chrome-dot project-card__chrome-dot--red" />
+                    <span className="project-card__chrome-dot project-card__chrome-dot--yellow" />
+                    <span className="project-card__chrome-dot project-card__chrome-dot--green" />
+                    {project.live && (
+                      <span className="project-card__chrome-url">{new URL(project.live).host}</span>
+                    )}
+                  </div>
+                  {project.live && (
+                    <span className="project-card__live-badge">
+                      <span className="project-card__live-dot" aria-hidden="true" />
+                      Live
+                    </span>
+                  )}
                   <img
                     src={project.image}
                     alt={`${project.title} screenshot`}
@@ -92,7 +107,20 @@ export default function Projects() {
                 {String(project.id).padStart(2, '0')}
               </div>
               <h3 className="project-card__title">{project.title}</h3>
-              <p className="project-card__desc">{project.description}</p>
+              {(Array.isArray(project.description) ? project.description : [project.description]).map((para, i) => (
+                <p key={i} className="project-card__desc">{para}</p>
+              ))}
+
+              {project.highlights && project.highlights.length > 0 && (
+                <ul className="project-card__highlights">
+                  {project.highlights.map((h) => (
+                    <li key={h} className="project-card__highlight">
+                      <span className="project-card__highlight-bullet" aria-hidden="true" />
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <div className="project-card__footer">
                 <div className="project-card__tech">

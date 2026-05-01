@@ -10,9 +10,11 @@ export const personalInfo = {
 };
 
 export const aboutParagraphs = [
-  `I am a passionate Computer Science student at the Polytechnic University of Puerto Rico and the co-founder of the ColorStack chapter at PUPR, an organization dedicated to promoting diversity in tech. My experience spans front-end development, with hands-on work using React, Bootstrap, and more. As a constant learner, I am eager to deepen my skills in back-end development and machine learning, always ready to embrace new technologies and methodologies.`,
-  `Through internships and personal projects, I've had the chance to develop software that solves real-world problems, such as enhancing audio synchronization for Microsoft Teams, which will benefit millions of users globally. I am excited to continue growing my knowledge and skill set, exploring innovative solutions, and making a meaningful impact in the tech industry.`,
-  `I am particularly driven by a desire to stay up to date on the latest technologies and trends in software development. In my free time, I enjoy playing video games, which has also helped sharpen my problem-solving and analytical thinking. I look forward to the opportunities ahead as I continue my journey toward becoming a well-rounded software engineer.`,
+  `I'm a Computer Science student at the Polytechnic University of Puerto Rico who enjoys building systems end to end, from performance critical C++ work in audio pipelines to full stack TypeScript applications and Retrieval Augmented Generation systems.`,
+  `At Microsoft, I worked on the Teams audio render pipeline, integrating an ML based noise suppression model to reduce background noise in real time calls and optimizing audio mixing and synchronization at scale across hundreds of millions of users. I also collaborated across teams to prototype interactive product experiences.`,
+  `Outside of internships, I build full stack projects with a focus on real functionality and depth. I built a Pokémon card collection tracking app that uses OCR to identify cards from images and match them through search, a personal finance platform integrating Teller and Plaid APIs with features like expense tracking, debt management, and future financial planning, and a RAG based system using hybrid retrieval, vector embeddings, and an LLM API to generate grounded answers from user provided documents.`,
+  `I'm especially interested in problems where systems, performance, and user experience intersect, building things that are not just functional but efficient and intuitive.`,
+  `Outside of coding, I enjoy gaming, traveling, and creating content. I like exploring new ideas and experiences, and I bring that same curiosity and iteration mindset into how I build and debug systems.`,
 ];
 
 export const experiences = [
@@ -59,9 +61,16 @@ export const projects = [
   {
     id: 1,
     title: 'BeanCount',
-    description:
-      'A full-stack personal finance dashboard that aggregates bank accounts, investments, crypto, credit cards, and debts into a unified net worth view. Integrates with Teller and Plaid APIs for real-time transaction syncing across 12,000+ financial institutions, with automatic spending categorization via regex-based merchant matching (100+ patterns). Features loan amortization schedules, RSU vesting planners, scenario-based net worth projections, and interactive donut charts — all built without external charting libraries.',
-    tech: ['Next.js', 'TypeScript', 'SQLite', 'Tailwind CSS', 'NextAuth'],
+    description: [
+      'A full-stack personal finance tracking app that aggregates assets, liabilities, and transactions in real time using PostgreSQL and Supabase.',
+      'Integrates Plaid and Teller APIs for automatic transaction ingestion and categorization, and includes a financial planning engine that models income, expenses, debt, and recurring cash flows such as salary, bonuses, and stock-based compensation with long-term projections.',
+    ],
+    highlights: [
+      'Financial planning engine (income, expenses, recurring cash flows, long-term projections)',
+      'Plaid & Teller API integration',
+      'Loan payoff simulation and scenario modeling'
+    ],
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'Plaid', 'NextAuth'],
     image: import.meta.env.BASE_URL + 'beancount.jpg',
     github: null,
     live: 'https://guanill.github.io/BeanCount/',
@@ -69,9 +78,16 @@ export const projects = [
   {
     id: 2,
     title: 'Poketeer',
-    description:
-      'A comprehensive Pokemon TCG collection manager with AI-powered card scanning using hybrid OCR + visual similarity matching (ResNet50 + ONNX). Features on-device ML inference via ONNX Runtime, real-time price tracking from TCGPlayer, multi-language support (EN/JA/TH) across 28,000+ cards, pgvector HNSW index for sub-millisecond similarity search, portfolio analytics with profit/loss tracking, and 3D card animations.',
-    tech: ['React', 'FastAPI', 'Supabase', 'ONNX', 'Capacitor'],
+    description: [
+      'A full-stack Pokémon TCG collection tracking app with a hybrid card-scanning pipeline that combines OCR and on-device image embeddings for fast, accurate recognition.',
+      'Supports multilingual cards (EN/JA/TH) with automatic detection, and enables similarity-based search across 18,000+ cards using vector embeddings. Designed for smooth performance with a fully virtualized interface and optimized image delivery, allowing fast browsing even on large collections.',
+    ],
+    highlights: [
+      'OCR embedding pipeline',
+      'Multilingual support (EN / JA / TH)',
+      'Vector similarity search over 18K+ cards',
+    ],
+    tech: ['React', 'TypeScript', 'FastAPI', 'Supabase'],
     image: import.meta.env.BASE_URL + 'poketeer.jpg',
     github: null,
     live: 'https://guanill.github.io/Poketeer/',
@@ -79,18 +95,32 @@ export const projects = [
   {
     id: 3,
     title: 'IntelliDocs – RAG Search Engine',
-    description:
-      'An end-to-end Retrieval-Augmented Generation system that lets users search and query large document collections through natural language. Features a full ingestion pipeline—chunking, embedding, and vector-based retrieval—that surfaces the most relevant context for LLM-generated answers. Includes a polished web interface for document upload and interactive querying, optimized for retrieval accuracy, low latency, and a clear, intuitive UX.',
-    tech: ['Python', 'React', 'LangChain', 'Vector DB'],
-    image: import.meta.env.BASE_URL + 'IntelliDocs.png',
+    description: [
+      'A full-stack document Q&A platform that uses a Retrieval-Augmented Generation pipeline to answer questions directly from user-uploaded documents with page-level citations.',
+      'Supports PDF, DOCX, and TXT files, with a custom multi-document retrieval system that ensures answers are drawn across all selected sources. Designed to reduce hallucinations through structured retrieval, controlled prompting, and strict citation rules.',
+      'Includes a background ingestion pipeline for document processing and a secure authentication system with support for isolated guest sessions.',
+    ],
+    highlights: [
+      'Page-level citations across multiple documents',
+      'Answers strictly from user-provided documents',
+    ],
+    tech: ['Python', 'FastAPI', 'LangChain', 'OpenAI', 'PostgreSQL', 'React'],
+    image: import.meta.env.BASE_URL + 'intellidocs.jpg',
     github: null,
     live: 'https://intellidocs-ivory.vercel.app/',
   },
   {
     id: 4,
     title: 'Interactive Travel Tracker',
-    description:
-      'A feature-rich, client-side web app for tracking and visualizing travel history on an interactive world map. Includes a D3.js-powered SVG map with zoom/pan, a flight log with animated arc routes and Haversine distance calculation, a landmark explorer with hundreds of curated worldwide landmarks, photo mapping with built-from-scratch EXIF GPS extraction, a shareable digital passport with travel stats and continent badges, and an advanced flight analytics dashboard.',
+    description: [
+      'A client-side travel app that turns personal travel history into an interactive world map with routes, locations, and photo-based insights.',
+      'Built with a custom D3.js SVG map supporting smooth zoom and pan, animated flight paths, and location mapping from photos using EXIF GPS data. Includes a shareable digital passport with travel stats, visited regions, and flight analytics.',
+    ],
+    highlights: [
+      'Interactive D3.js world map (zoom + pan)',
+      'Photo-based mapping using EXIF GPS extraction',
+      'Shareable travel passport with stats and insights',
+    ],
     tech: ['JavaScript', 'TopoJSON'],
     image: import.meta.env.BASE_URL + 'travel-tracker.png',
     github: null,
@@ -99,6 +129,6 @@ export const projects = [
 ];
 
 export const techStack = {
-  frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
-  backend: ['Python', 'C++', 'Node.js'],
+  frontend: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Bootstrap'],
+  backend: ['Python', 'C++', 'Node.js', 'FastAPI', 'PostgreSQL', 'SQLite'],
 };

@@ -65,6 +65,67 @@ const SKILL_ICONS = {
       <path fill="#fff" d="M57.95 56.545l-4.93-2.85a.844.844 0 00-.757 0l-4.93 2.85a.773.773 0 00-.387.672v5.7a.773.773 0 00.387.672l4.93 2.85a.844.844 0 00.757 0l4.93-2.85a.773.773 0 00.387-.672v-5.7a.773.773 0 00-.387-.672z" />
     </svg>
   ),
+  TypeScript: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <rect width="128" height="128" rx="14" fill="#3178C6" />
+      <text x="64" y="92" textAnchor="middle" fontFamily="-apple-system,system-ui,Segoe UI,sans-serif" fontSize="56" fontWeight="700" fill="#fff">TS</text>
+    </svg>
+  ),
+  'Next.js': (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <circle cx="64" cy="64" r="64" fill="#000" />
+      <text x="64" y="92" textAnchor="middle" fontFamily="-apple-system,system-ui,Segoe UI,sans-serif" fontSize="72" fontWeight="700" fontStyle="italic" fill="#fff">N</text>
+    </svg>
+  ),
+  'Tailwind CSS': (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <path fill="#38BDF8" d="M64 25.6c-17.067 0-27.733 8.534-32 25.6 6.4-8.533 13.867-11.733 22.4-9.6 4.871 1.215 8.352 4.747 12.207 8.66C72.883 56.624 80.241 64 96.4 64c17.067 0 27.733-8.533 32-25.6-6.4 8.533-13.867 11.733-22.4 9.6-4.871-1.215-8.352-4.747-12.207-8.66C87.517 32.976 80.159 25.6 64 25.6zM32 64c-17.067 0-27.733 8.533-32 25.6 6.4-8.533 13.867-11.733 22.4-9.6 4.871 1.215 8.352 4.747 12.207 8.66C40.883 95.024 48.241 102.4 64.4 102.4c17.067 0 27.733-8.533 32-25.6-6.4 8.533-13.867 11.733-22.4 9.6-4.871-1.215-8.352-4.747-12.207-8.66C55.517 71.376 48.159 64 32 64z" />
+    </svg>
+  ),
+  FastAPI: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <circle cx="64" cy="64" r="64" fill="#009688" />
+      <path fill="#fff" d="M62 16L30 76h26l-4 36 32-60H58l4-36z" />
+    </svg>
+  ),
+  PostgreSQL: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <rect width="128" height="128" rx="14" fill="#336791" />
+      <text x="64" y="86" textAnchor="middle" fontFamily="-apple-system,system-ui,Segoe UI,sans-serif" fontSize="44" fontWeight="700" fill="#fff">Pg</text>
+    </svg>
+  ),
+  SQLite: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <ellipse cx="64" cy="32" rx="44" ry="14" fill="#0F80CC" />
+      <path fill="#0F80CC" d="M20 32v64c0 7.732 19.7 14 44 14s44-6.268 44-14V32c0 7.732-19.7 14-44 14S20 39.732 20 32z" />
+      <ellipse cx="64" cy="32" rx="44" ry="14" fill="none" stroke="#fff" strokeOpacity="0.5" strokeWidth="2" />
+      <ellipse cx="64" cy="64" rx="44" ry="14" fill="none" stroke="#fff" strokeOpacity="0.4" strokeWidth="2" />
+    </svg>
+  ),
+  ONNX: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <rect width="128" height="128" rx="14" fill="#5C9DD3" />
+      <text x="64" y="80" textAnchor="middle" fontFamily="-apple-system,system-ui,Segoe UI,sans-serif" fontSize="30" fontWeight="700" fill="#fff">ONNX</text>
+    </svg>
+  ),
+  LangChain: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <rect width="128" height="128" rx="14" fill="#1C3C3C" />
+      <text x="64" y="92" textAnchor="middle" fontFamily="-apple-system,system-ui,Segoe UI,sans-serif" fontSize="52" fontWeight="700" fill="#fff">LC</text>
+    </svg>
+  ),
+  Supabase: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <circle cx="64" cy="64" r="64" fill="#3ECF8E" />
+      <path fill="#fff" d="M58 18v44h44L70 110V66H26L58 18z" />
+    </svg>
+  ),
+  Capacitor: (
+    <svg viewBox="0 0 128 128" width="28" height="28">
+      <circle cx="64" cy="64" r="64" fill="#119EFF" />
+      <path fill="#fff" d="M70 18L36 70h22l-6 40 34-52H64l6-40z" />
+    </svg>
+  ),
 };
 
 export default function Skills() {
@@ -95,7 +156,7 @@ export default function Skills() {
           <div className="skills__category reveal reveal-delay-2">
             <h3 className="skills__category-title">
               <span className="skills__category-dot skills__category-dot--back" />
-              Backend & Other
+              Backend & Data
             </h3>
             <div className="skills__pills">
               {techStack.backend.map((skill) => (
@@ -106,6 +167,7 @@ export default function Skills() {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>
